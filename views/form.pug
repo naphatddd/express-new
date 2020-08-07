@@ -1,0 +1,26 @@
+extends layout
+
+block content
+
+    .container
+        .row
+            .col-6.col-lg-12
+                h2 ADD USER
+                form(action="/form/form" method="post")
+                    .row
+                        .form-group.col-6
+                            label(for="") Firstname
+                            input(type="text" name='name' class='form-control')
+                        .form-group.col-6
+                            label(for="") Email
+                            input(type="email" name='email' class='form-control')
+                        .form-group.col-6
+                            label(for="") Password
+                            input(type="password" name='password' class='form-control')
+                    .row
+                        .form-group.col-2
+                            button(type='submit').btn.btn-block.btn-success ADD
+                        .form-group.col-2
+                            button(type='reset').btn.btn-block.btn-warning Reset
+
+
